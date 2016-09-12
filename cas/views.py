@@ -148,7 +148,7 @@ def _logout_url(request, next_page=None):
     return url
 
 
-def login(request, next_page=None, required=False, gateway=False):
+def login(request, next_page=None, required=False, gateway=False, template_name=None):
     """
     Forwards to CAS login URL or verifies CAS ticket
 
@@ -208,7 +208,7 @@ def login(request, next_page=None, required=False, gateway=False):
             return HttpResponseRedirect(_login_url(service, ticket, False))
 
 
-def logout(request, next_page=None):
+def logout(request, next_page=None, template_name=None):
     """
     Redirects to CAS logout page
 
