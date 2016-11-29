@@ -2,16 +2,16 @@ import os
 
 from setuptools import setup, find_packages
 
-version = '1.2.0'
+version = '1.2.1'
 
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
-setup(name='django-cas-client',
+setup(name='django-cas-client-ozp',
       version=version,
-      description="Django Cas Client",
+      description="Django Cas Client (OZP Fork)",
       long_description=read('README.md'),
       classifiers=[
           "Development Status :: 5 - Production/Stable",
@@ -30,7 +30,7 @@ setup(name='django-cas-client',
           "Topic :: Utilities",
           "License :: OSI Approved :: MIT License",
           ],
-      keywords='django cas',
+      keywords='django cas ozp',
       author='Derek Stegelman, Garrett Pennington',
       author_email='derekst@k-state.edu, garrettp@gmail.com',
       url='http://github.com/kstateome/django-cas/',

@@ -1,3 +1,7 @@
+### 1.2.1
+
+- Resolved "logout() got an unexpected keyword argument 'template_name'" error
+
 ### 1.2.0
 
 - Allow opt out of time delay caused by fetching PGT tickets
